@@ -1,0 +1,29 @@
+version: 2.1
+orbs:
+  ruby: circleci/ruby@0.1.2
+
+jobs:
+  build:
+    working_directory: ~/waste-not-be
+    docker:
+      - image: circleci/ruby:2.7.4
+        environment:
+          PGHOST: localhost
+          PGUSER: waste-not-be
+          RAILS_ENV: test
+      - image: postgres:13.2
+        environment:
+          POSTGRES_USER: waste-not-be
+          POSTGRES_DB: waste-not-be_test
+          POSTGRES_PASSWORD:
+    steps:
+      - checkout
+      - run:
+          name: waste-not-be
+          command: bundle -v
+      - ruby/bundle-install
+
+      - checkout
+      - run: bundle install --path vendor/bundle
+      - run: bundle exec rake db:migrate
+      - run: bundle exec rspec

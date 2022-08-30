@@ -5,7 +5,6 @@ RSpec.describe Route do
   it "creates a route object from JSON response" do
     json = JSON.parse(File.read('spec/fixtures/short_route_example.json'), symbolize_names: true)
     route = Route.new(json)
-    expect(route.seconds).to eq(112)
     expect(route.unformatted_time).to eq("00:01:52")
   end
 

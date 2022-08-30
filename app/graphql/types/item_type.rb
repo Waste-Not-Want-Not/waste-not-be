@@ -8,6 +8,7 @@ module Types
     field :location, String
     field :expiration_date, GraphQL::Types::ISO8601DateTime
     field :image, String
+    field :for_donation, Boolean
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
   end

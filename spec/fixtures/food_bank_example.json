@@ -1,0 +1,48 @@
+{
+    "businesses": [
+        {
+            "id": "QPKXdUjHVmjvu-yRZJaeLg",
+            "alias": "food-bank-of-the-rockies-denver",
+            "name": "Food Bank of the Rockies",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/j844LPlYwbsWoEW69uHjCQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/food-bank-of-the-rockies-denver?adjust_creative=5mPFCxCK3u-REAGXxWdkPQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=5mPFCxCK3u-REAGXxWdkPQ",
+            "review_count": 6,
+            "categories": [
+                {
+                    "alias": "foodbanks",
+                    "title": "Food Banks"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 39.7777671813965,
+                "longitude": -104.863555908203
+            },
+            "transactions": [],
+            "location": {
+                "address1": "10700 E 45th Ave",
+                "address2": "",
+                "address3": "",
+                "city": "Denver",
+                "zip_code": "80239",
+                "country": "US",
+                "state": "CO",
+                "display_address": [
+                    "10700 E 45th Ave",
+                    "Denver, CO 80239"
+                ]
+            },
+            "phone": "+13033719250",
+            "display_phone": "(303) 371-9250",
+            "distance": 10265.678795393254
+        }
+    ],
+    "total": 2,
+    "region": {
+        "center": {
+            "longitude": -104.97024536132812,
+            "latitude": 39.73552421220229
+        }
+    }
+}

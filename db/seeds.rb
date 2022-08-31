@@ -20,3 +20,9 @@ end
 6.times do
   user.items.create(name: Faker::Food.ingredient, location: "fridge", expiration_date: Faker::Date.between(from: Date.today, to: 30.days.from_now) , image: Faker::LoremFlickr.image)
 end
+
+user.items.create(name: Faker::Food.ingredient, location: "fridge", expiration_date: Faker::Date.between(from: Date.today, to: 30.days.from_now) , image: Faker::LoremFlickr.image, for_donation: true)
+
+user.items.create(name: Faker::Food.ingredient, location: "pantry", expiration_date: Faker::Date.between(from: Date.today, to: 30.days.from_now) , image: Faker::LoremFlickr.image, for_donation: true)
+
+user.items.create(name: Faker::Food.ingredient, location: "freezer", expiration_date: Faker::Date.between(from: Date.today, to: 30.days.from_now) , image: Faker::LoremFlickr.image, for_donation: true)

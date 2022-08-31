@@ -11,6 +11,7 @@ module Types
     field :pantry_items, [Types::ItemType]
     field :fridge_items, [Types::ItemType]
     field :freezer_items, [Types::ItemType]
+    field :donation_items, [Types::ItemType]
 
     def pantry_items
       object.items.location("pantry")
@@ -22,6 +23,10 @@ module Types
 
     def freezer_items
       object.items.location("freezer")
+    end
+
+    def donation_items
+      object.items.for_donation
     end
   end
 end

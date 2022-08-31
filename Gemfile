@@ -37,8 +37,13 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
   gem 'graphiql-rails'
+  gem 'pry'
 
 end
+
+group :test do
+  gem 'simplecov', require: false
+end 
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'

@@ -30,5 +30,22 @@ RSpec.describe User, type: :model do
     
       end
     end
+   
+    describe 'user.items.for_donation' do
+      it 'returns the users items for donation' do
+        user = User.create(name: Faker::Name.name, email: Faker::Internet.email)
+
+        2.times do
+          user.items.create(name: Faker::Food.ingredient, location: "pantry", expiration_date: Faker::Date.between(from: Date.today, to: 30.days.from_now) , image: Faker::LoremFlickr.image)
+        end
+
+        3.times do
+          user.items.create(name: Faker::Food.ingredient, location: "freezer", expiration_date: Faker::Date.between(from: Date.today, to: 30.days.from_now) , image: Faker::LoremFlickr.image, for_donation: true)
+        end
+
+        expect(user.items.count).to eq(5)
+        expect(user.items.for_donation.count).to eq(3)  
+      end
+    end
   end
 end

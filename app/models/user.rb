@@ -3,5 +3,10 @@ class User < ApplicationRecord
     def location(location)
       where(location: location)
     end
+
+    def for_donation
+      where(for_donation: true)
+    end
+
   end
 end

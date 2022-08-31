@@ -4,7 +4,7 @@ RSpec.describe 'Get User By ID query' do
   before do
     @user1 = User.create!(name: "Harry Potter", email: "hpotter@hogwarts.edu")
     @user1.items.create(name: "Peanut Butter", location: "pantry", expiration_date: Time.now, image: "www.peanutbutterimage.com")
-    @user1.items.create(name: "Green Peas", location: "freezer", expiration_date: Time.now, image: "www.peasimage.com")
+    @user1.items.create(name: "Green Peas", location: "freezer", expiration_date: Time.now, image: "www.peasimage.com", for_donation: true)
     @user1.items.create(name: "Milk", location: "fridge", expiration_date: Time.now, image: "www.milkimage.com")
 
     @user2 = User.create!(name: "Ron Weasley", email: "rweasley@hogwarts.edu")
@@ -132,6 +132,29 @@ RSpec.describe 'Get User By ID query' do
       expect(user_items).to be_an Array
       expect(user_items.count).to eq(1)
       expect(user_items.first["name"]).to eq("Milk")
+    end
+
+    it 'returns the user by id and their items for donation' do
+      query = <<~GQL
+      query {
+        getUserById(id: #{@user1.id}) {
+          name
+          email
+          donationItems {
+              name
+              expirationDate
+              location
+              forDonation
+              image
+          }
+        }
+      }
+      GQL
+      result = WasteNotWantNotBeSchema.execute(query)
+      user_items = result.dig("data", "getUserById", "donationItems")
+      expect(user_items).to be_an Array
+      expect(user_items.count).to eq(1)
+      expect(user_items.first["name"]).to eq("Green Peas")
     end
   end 
 end

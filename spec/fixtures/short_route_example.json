@@ -1,0 +1,256 @@
+{
+    "route": {
+        "hasTollRoad": false,
+        "hasBridge": false,
+        "boundingBox": {
+            "lr": {
+                "lng": -84.11335,
+                "lat": 39.825111
+            },
+            "ul": {
+                "lng": -84.116035,
+                "lat": 39.828423
+            }
+        },
+        "distance": 0.444,
+        "hasTimedRestriction": false,
+        "hasTunnel": false,
+        "hasHighway": false,
+        "computedWaypoints": [],
+        "routeError": {
+            "errorCode": -400,
+            "message": ""
+        },
+        "formattedTime": "00:01:52",
+        "sessionId": "62effa8c-00e5-6750-02b4-377e-0ef291beda35",
+        "hasAccessRestriction": false,
+        "realTime": 111,
+        "hasSeasonalClosure": false,
+        "hasCountryCross": false,
+        "fuelUsed": 0.04,
+        "legs": [
+            {
+                "hasTollRoad": false,
+                "hasBridge": false,
+                "destNarrative": "",
+                "distance": 0.444,
+                "hasTimedRestriction": false,
+                "hasTunnel": false,
+                "hasHighway": false,
+                "index": 0,
+                "formattedTime": "00:01:52",
+                "origIndex": 1,
+                "hasAccessRestriction": false,
+                "hasSeasonalClosure": false,
+                "hasCountryCross": false,
+                "roadGradeStrategy": [
+                    []
+                ],
+                "destIndex": -1,
+                "time": 112,
+                "hasUnpaved": false,
+                "origNarrative": "Go south on Heather Way.",
+                "maneuvers": [
+                    {
+                        "distance": 0.094,
+                        "streets": [
+                            "Tall Oaks Ct"
+                        ],
+                        "narrative": "Start out going north on Tall Oaks Ct toward Heather Way.",
+                        "turnType": 2,
+                        "startPoint": {
+                            "lng": -84.11335,
+                            "lat": 39.827194
+                        },
+                        "index": 0,
+                        "formattedTime": "00:00:23",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=qsdtuKr1TdTzPVFAzGAckLojz373YVO9&size=225,160&locations=39.82719421386719,-84.11334991455078|marker-1||39.82842254638672,-84.11369323730469|marker-2||&center=39.82780838012695,-84.11352157592773&defaultMarker=none&zoom=13&rand=564514074&session=62effa8c-00e5-6750-02b4-377e-0ef291beda35",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 23,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 0.301,
+                        "streets": [
+                            "Heather Way"
+                        ],
+                        "narrative": "Turn left onto Heather Way.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -84.113693,
+                            "lat": 39.828423
+                        },
+                        "index": 1,
+                        "formattedTime": "00:01:24",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=qsdtuKr1TdTzPVFAzGAckLojz373YVO9&size=225,160&locations=39.82842254638672,-84.11369323730469|marker-2||39.82516098022461,-84.11603546142578|marker-3||&center=39.826791763305664,-84.11486434936523&defaultMarker=none&zoom=11&rand=564514074&session=62effa8c-00e5-6750-02b4-377e-0ef291beda35",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 84,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 0.049,
+                        "streets": [
+                            "Kitridge Rd"
+                        ],
+                        "narrative": "Turn left onto Kitridge Rd.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -84.116035,
+                            "lat": 39.825161
+                        },
+                        "index": 2,
+                        "formattedTime": "00:00:05",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=qsdtuKr1TdTzPVFAzGAckLojz373YVO9&size=225,160&locations=39.82516098022461,-84.11603546142578|marker-3||39.825111389160156,-84.1151123046875|marker-4||&center=39.82513618469238,-84.11557388305664&defaultMarker=none&zoom=15&rand=564514074&session=62effa8c-00e5-6750-02b4-377e-0ef291beda35",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 5,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 0,
+                        "streets": [],
+                        "narrative": "[4200 - 5999] KITRIDGE RD.",
+                        "turnType": -1,
+                        "startPoint": {
+                            "lng": -84.115112,
+                            "lat": 39.825111
+                        },
+                        "index": 3,
+                        "formattedTime": "00:00:00",
+                        "directionName": "",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 0,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif",
+                        "direction": 0
+                    }
+                ],
+                "hasFerry": false
+            }
+        ],
+        "options": {
+            "arteryWeights": [],
+            "cyclingRoadFactor": 1,
+            "timeType": 0,
+            "useTraffic": false,
+            "returnLinkDirections": false,
+            "countryBoundaryDisplay": true,
+            "enhancedNarrative": false,
+            "locale": "en_US",
+            "tryAvoidLinkIds": [],
+            "drivingStyle": 2,
+            "doReverseGeocode": true,
+            "generalize": -1,
+            "mustAvoidLinkIds": [],
+            "sideOfStreetDisplay": true,
+            "routeType": "FASTEST",
+            "avoidTimedConditions": false,
+            "routeNumber": 0,
+            "shapeFormat": "raw",
+            "maxWalkingDistance": -1,
+            "destinationManeuverDisplay": true,
+            "transferPenalty": -1,
+            "narrativeType": "text",
+            "walkingSpeed": -1,
+            "urbanAvoidFactor": -1,
+            "stateBoundaryDisplay": true,
+            "unit": "M",
+            "highwayEfficiency": 22,
+            "maxLinkId": 0,
+            "maneuverPenalty": -1,
+            "avoidTripIds": [],
+            "filterZoneFactor": -1,
+            "manmaps": "true"
+        },
+        "locations": [
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -84.113358,
+                    "lat": 39.827194
+                },
+                "adminArea4": "Montgomery",
+                "adminArea5": "Huber Heights",
+                "postalCode": "45424-8722",
+                "adminArea1": "US",
+                "adminArea3": "OH",
+                "type": "s",
+                "sideOfStreet": "L",
+                "geocodeQualityCode": "P1AAA",
+                "adminArea4Type": "County",
+                "linkId": 21186402,
+                "street": "5278 Tall Oaks Ct",
+                "adminArea5Type": "City",
+                "geocodeQuality": "POINT",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -84.113354,
+                    "lat": 39.827196
+                }
+            },
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -84.115112,
+                    "lat": 39.825108
+                },
+                "adminArea4": "Montgomery",
+                "adminArea5": "Huber HTS",
+                "postalCode": "45424",
+                "adminArea1": "US",
+                "adminArea3": "OH",
+                "type": "s",
+                "sideOfStreet": "N",
+                "geocodeQualityCode": "B1ACX",
+                "adminArea4Type": "County",
+                "linkId": 5419869,
+                "street": "[4200 - 5999] Kitridge Rd",
+                "adminArea5Type": "City",
+                "geocodeQuality": "STREET",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -84.115115,
+                    "lat": 39.825109
+                }
+            }
+        ],
+        "time": 112,
+        "hasUnpaved": false,
+        "locationSequence": [
+            0,
+            1
+        ],
+        "hasFerry": false
+    },
+    "info": {
+        "statuscode": 0,
+        "copyright": {
+            "imageAltText": "© 2022 MapQuest, Inc.",
+            "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+            "text": "© 2022 MapQuest, Inc."
+        },
+        "messages": []
+    }
+}

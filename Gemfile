@@ -29,6 +29,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'rack-cors'
 
 gem "graphql"
+gem "faraday"
+gem "figaro"
 
 gem 'faker'
 
@@ -39,6 +41,7 @@ group :development, :test do
   gem 'graphiql-rails'
   gem 'pry'
   gem 'shoulda-matchers'
+
 end
 
 group :test do
@@ -50,6 +53,11 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem 'vcr'
+  gem 'webmock'
 end
 
 

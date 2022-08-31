@@ -38,7 +38,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'graphiql-rails'
   gem 'pry'
-
+  gem 'shoulda-matchers'
 end
 
 group :test do

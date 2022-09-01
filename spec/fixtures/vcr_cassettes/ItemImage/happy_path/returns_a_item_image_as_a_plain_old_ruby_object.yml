@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?per_page=1&query=apples
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - 563492ad6f917000010000013766ed931f7b4fd7bc7697331b581cb1
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 00:46:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '464'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7439fcb25ccf8eaa-DEN
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - __cf_bm=K1twCT5kKLEwuASSsL652h3hr3Z8xF7ikcORVo.yFJQ-1661981369-0-AYcMhbM0oxnXMzMoCac6ct5XLq3gtlxrHcn1hjpydVnJULJYsrUcQuD6+uLEdiy14W44By9BnxeWd+i4sSgAYVs=;
+        path=/; expires=Wed, 31-Aug-22 21:59:29 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      - __cf_bm=l.YVIALihWlMIMe_m8dg1fPZ8zfJ5kM1CvJ4bLrt9mw-1661993167-0-AW9eL/vpxmJ1UOhwxBfHQhChHcEQSxsXyCvKa869owW6LbNFBoqCosb2dAYwKzNJ6PlEjwE2iDe9YkJPx69BrZY=;
+        path=/; expires=Thu, 01-Sep-22 01:16:07 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19964'
+      X-Ratelimit-Reset:
+      - '1664499674'
+      X-Request-Id:
+      - 8c2064fa-866b-4837-93f6-7b000b4e2663
+      X-Runtime:
+      - '0.101910'
+      X-Server:
+      - anteater
+      X-Tyk-Cached-Response:
+      - '1'
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"per_page":1,"photos":[{"id":1453713,"width":2304,"height":3456,"url":"https://www.pexels.com/photo/photography-of-pile-of-apples-1453713/","photographer":"Maria
+        Lindsey Content Creator","photographer_url":"https://www.pexels.com/@margemedia","photographer_id":647565,"avg_color":"#B94744","src":{"original":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg","large2x":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Photography
+        of Pile of Apples"}],"total_results":5826,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=1\u0026query=apples"}'
+  recorded_at: Thu, 01 Sep 2022 00:46:07 GMT
+recorded_with: VCR 6.1.0

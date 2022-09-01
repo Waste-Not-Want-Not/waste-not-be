@@ -25,10 +25,7 @@ RSpec.describe Route do
     json = JSON.parse(File.read('spec/fixtures/short_route_example.json'), symbolize_names: true)
     route = Route.new(json)
 
-    expect(route.directions(json)).to be_a Array
-    expect(route.directions(json)).to eq(["Start out going north on Tall Oaks Ct toward Heather Way, and continue for 0.094 Miles",
-      "Turn left onto Heather Way, and continue for 0.301 Miles",
-      "Turn left onto Kitridge Rd, and continue for 0.049 Miles",
-      "[4200 - 5999] KITRIDGE RD, and continue for 0 Miles"])
+    expect(route.directions(json)).to be_a String
+    expect(route.directions(json)).to eq("Start out going north on Tall Oaks Ct toward Heather Way, and continue for 0.094 Miles, Turn left onto Heather Way, and continue for 0.301 Miles, Turn left onto Kitridge Rd, and continue for 0.049 Miles, [4200 - 5999] KITRIDGE RD, and continue for 0 Miles")
   end
 end

@@ -29,7 +29,7 @@ module Types
         name: info.name,
         address: info.address,
         phone_number: info.phone_number,
-        directions: directions.directions_array.join(", ")
+        directions: directions.directions_array
       }
     end
 

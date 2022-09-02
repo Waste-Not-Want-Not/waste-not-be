@@ -77,5 +77,6 @@ http_interactions:
         CO 80239"]}, "phone": "+13033719250", "display_phone": "(303) 371-9250", "distance":
         10265.678795393254}], "total": 2, "region": {"center": {"longitude": -104.97024536132812,
         "latitude": 39.73552421220229}}}'
+
   recorded_at: Wed, 31 Aug 2022 23:02:06 GMT
 recorded_with: VCR 6.1.0

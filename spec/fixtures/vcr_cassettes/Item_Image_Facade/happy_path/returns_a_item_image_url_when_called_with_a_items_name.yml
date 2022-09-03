@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - 563492ad6f917000010000013766ed931f7b4fd7bc7697331b581cb1
+      - 563492ad6f917000010000018490fb2ba77c417c8345961478bc81ce
       User-Agent:
       - Faraday v2.5.2
       Accept-Encoding:
@@ -21,23 +21,23 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 31 Aug 2022 22:25:17 GMT
+      - Sat, 03 Sep 2022 00:18:06 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Content-Length:
-      - '464'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
       Cf-Ray:
-      - 74392e6648938e99-DEN
+      - 744a4e660bc8c46d-EWR
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - __cf_bm=K1twCT5kKLEwuASSsL652h3hr3Z8xF7ikcORVo.yFJQ-1661981369-0-AYcMhbM0oxnXMzMoCac6ct5XLq3gtlxrHcn1hjpydVnJULJYsrUcQuD6+uLEdiy14W44By9BnxeWd+i4sSgAYVs=;
-        path=/; expires=Wed, 31-Aug-22 21:59:29 GMT; domain=.pexels.com; HttpOnly;
+      - __cf_bm=NBye7Zx1Q_ZNxJWSQA5P5bvs2rdPqHwrFtiiwz_DiPA-1662164286-0-AUqF1DrnG/Ek5WSQuh+wsT2jLmq50lQs5RKGiB9EX6rH3ioTylfZzFGszswY4VlX+TGU1zuIwUEXQS0b+EVmfNI=;
+        path=/; expires=Sat, 03-Sep-22 00:48:06 GMT; domain=.pexels.com; HttpOnly;
         Secure; SameSite=None
-      - __cf_bm=icFdY4e4DR03hxcJoiEGPFmkrVcPdPiIMd523cvv_Ho-1661984717-0-AWCFAZndzErJfFtlcxzpTM4jn9mLT3jaZ5K4BZYroP865gdqduv91u4fbR7MJVLdjs6rXcs4KbHy28hGC1bhqog=;
-        path=/; expires=Wed, 31-Aug-22 22:55:17 GMT; domain=.pexels.com; HttpOnly;
+      - __cf_bm=kZd2nYarIFYXvmLncpYoTHBZj12uN2cFSXr9yKU2zVA-1662164286-0-AS735sB+I5wME8EBoUfdhQzuY9rQiO2+8UBbBal8C71nveYbBJF/gg5XWWkcQ2QjiYtsuHJ7QQ+RFPF8wl9x2Eg=;
+        path=/; expires=Sat, 03-Sep-22 00:48:06 GMT; domain=.pexels.com; HttpOnly;
         Secure; SameSite=None
       Vary:
       - Origin, Accept-Encoding
@@ -50,23 +50,21 @@ http_interactions:
       X-Ratelimit-Limit:
       - '20000'
       X-Ratelimit-Remaining:
-      - '19966'
+      - '19999'
       X-Ratelimit-Reset:
-      - '1664499674'
+      - '1664684286'
       X-Request-Id:
-      - 8c2064fa-866b-4837-93f6-7b000b4e2663
+      - 10000e09-8f5d-4a7a-bd81-0c86bd00f617
       X-Runtime:
-      - '0.101910'
+      - '0.234063'
       X-Server:
-      - anteater
-      X-Tyk-Cached-Response:
-      - '1'
+      - alpaca
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"per_page":1,"photos":[{"id":1453713,"width":2304,"height":3456,"url":"https://www.pexels.com/photo/photography-of-pile-of-apples-1453713/","photographer":"Maria
         Lindsey Content Creator","photographer_url":"https://www.pexels.com/@margemedia","photographer_id":647565,"avg_color":"#B94744","src":{"original":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg","large2x":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/1453713/pexels-photo-1453713.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Photography
-        of Pile of Apples"}],"total_results":5826,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=1\u0026query=apples"}'
-  recorded_at: Wed, 31 Aug 2022 22:25:17 GMT
+        of Pile of Apples"}],"total_results":5824,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=1\u0026query=apples"}'
+  recorded_at: Sat, 03 Sep 2022 00:18:06 GMT
 recorded_with: VCR 6.1.0

@@ -27,29 +27,29 @@ http_interactions:
       Content-Type:
       - application/json
       X-Routing-Service:
-      - routing-main--useast1-6d75d9b47f-988x5; site=public_api_v3
-      X-Zipkin-Id:
-      - 8c2bb1258536eb4d
-      X-B3-Sampled:
-      - '0'
+      - routing-canary--useast1-6b8cdb544d-v6hkv; site=public_api_v3
       Server:
       - envoy
+      X-Zipkin-Id:
+      - 5533e4a626c76790
+      X-B3-Sampled:
+      - '0'
       X-Cloudmap:
       - routing_useast1
       X-Mode:
       - ro
       X-Proxied:
-      - 10-65-133-10-useast1bprod
+      - 10-65-91-109-useast1aprod
       X-Extlb:
-      - 10-65-133-10-useast1bprod
+      - 10-65-91-109-useast1aprod
       Accept-Ranges:
       - bytes
       Date:
-      - Thu, 01 Sep 2022 22:39:28 GMT
+      - Sat, 03 Sep 2022 00:18:08 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-dfw-kdfw8210068-DFW
+      - cache-ewr18139-EWR
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -58,5 +58,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error": {"code": "VALIDATION_ERROR", "description": "'''' is too
         short", "field": "location", "instance": ""}}'
-  recorded_at: Thu, 01 Sep 2022 22:39:28 GMT
+  recorded_at: Sat, 03 Sep 2022 00:18:08 GMT
 recorded_with: VCR 6.1.0

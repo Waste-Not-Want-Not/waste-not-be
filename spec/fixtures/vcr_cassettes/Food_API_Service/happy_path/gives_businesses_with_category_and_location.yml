@@ -24,18 +24,18 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      X-B3-Sampled:
-      - '0'
-      X-Zipkin-Id:
-      - 7450f226f30b8ddb
-      Ratelimit-Resettime:
-      - '2022-09-01T00:00:00+00:00'
+      Ratelimit-Remaining:
+      - '4989'
       X-Routing-Service:
-      - routing-main--useast1-6d75d9b47f-zdsh9; site=public_api_v3
+      - routing-main--useast1-6d75d9b47f-9pg5c; site=public_api_v3
+      Ratelimit-Resettime:
+      - '2022-09-04T00:00:00+00:00'
       Ratelimit-Dailylimit:
       - '5000'
-      Ratelimit-Remaining:
-      - '4995'
+      X-Zipkin-Id:
+      - 49edb266394b42ba
+      X-B3-Sampled:
+      - '0'
       Server:
       - envoy
       X-Cloudmap:
@@ -43,19 +43,19 @@ http_interactions:
       X-Mode:
       - ro
       X-Proxied:
-      - 10-65-164-1-useast1bprod
+      - 10-65-190-140-useast1bprod
       X-Extlb:
-      - 10-65-164-1-useast1bprod
+      - 10-65-190-140-useast1bprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 31 Aug 2022 17:22:01 GMT
+      - Sat, 03 Sep 2022 00:18:08 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-dfw-kdfw8210096-DFW
+      - cache-ewr18149-EWR
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -77,5 +77,5 @@ http_interactions:
         CO 80239"]}, "phone": "+13033719250", "display_phone": "(303) 371-9250", "distance":
         10265.678795393254}], "total": 2, "region": {"center": {"longitude": -104.97024536132812,
         "latitude": 39.73552421220229}}}'
-  recorded_at: Wed, 31 Aug 2022 17:22:01 GMT
+  recorded_at: Sat, 03 Sep 2022 00:18:08 GMT
 recorded_with: VCR 6.1.0

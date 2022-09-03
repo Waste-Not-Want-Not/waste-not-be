@@ -21,7 +21,7 @@ class Route
     route_data[:route][:legs].first[:maneuvers].each do |leg|
       direction_array << "#{leg[:narrative].gsub(".",",")} and continue for #{leg[:distance]} Miles"
     end
-    direction_array
+    direction_array.join(", ")
   end
 
 end

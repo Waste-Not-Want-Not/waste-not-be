@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Create Item' do
-  it "creates an item and returns its information" do
+  it "creates an item and returns its information", :vcr do
     user1 = User.create!(name: "Harry Potter", email: "hpotter@hogwarts.edu")
 
     query = <<~GQL
@@ -34,7 +34,7 @@ RSpec.describe 'Create Item' do
     expect(item["location"]).to eq("fridge")
     expect(item["expirationDate"]).to eq("2001-02-03T04:05:06Z")
     expect(item["userId"]).to be_an Integer
-    expect(item["image"]).to eq("fakeimage")
+    expect(item["image"]).to be_a String
     expect(item["forDonation"]).to eq(false)
 
   end  

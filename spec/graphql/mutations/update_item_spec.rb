@@ -16,11 +16,7 @@ RSpec.describe 'Update Items' do
 
     mutation = <<~GQL
     mutation {
-      updateItem(input: { id: #{@update[:id]}
-            name: "#{@update[:name]}",
-            expirationDate: "2022-09-24",
-            location: "#{@update[:location]}",
-            forDonation: "true"
+      updateForDonation(input: { id: #{@update[:id]}
       })
       {
         item{
@@ -35,8 +31,54 @@ RSpec.describe 'Update Items' do
     }
     GQL
     response = WasteNotWantNotBeSchema.execute(mutation)
-    expect(@user1.items.last.name).to eq('Apple')
-    expect(@user1.items.last.location).to eq('pantry')
+    expect(@user1.items.last.name).to eq('Milk')
+    expect(@user1.items.last.location).to eq('fridge')
     expect(@user1.items.last.for_donation).to eq(true)
+  end  
+
+  it "cannot update a user's item without a viable ID", :vcr do
+
+    mutation = <<~GQL
+    mutation {
+      updateForDonation(input: { id: 1000000000
+      })
+      {
+        item{
+            name
+            expirationDate
+            location
+            forDonation
+            userId
+            image
+        }
+        errors
+      }
+    }
+    GQL
+    response = WasteNotWantNotBeSchema.execute(mutation)
+    expect(response.first.last["updateForDonation"]["errors"]).to eq("Item does not exist within our database.")
+  end  
+
+  it "cannot update a user's item without a viable ID", :vcr do
+
+    mutation = <<~GQL
+    mutation {
+      updateForDonation(input: { id: ''
+      })
+      {
+        item{
+            name
+            expirationDate
+            location
+            forDonation
+            userId
+            image
+        }
+        errors
+      }
+    }
+    GQL
+    response = WasteNotWantNotBeSchema.execute(mutation)
+    expect(response.first.second.first["message"]).to eq("Parse error on \"'\" (error) at [2, 34]")
   end  
 end

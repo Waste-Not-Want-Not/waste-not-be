@@ -10,7 +10,8 @@ class Mutations::CreateItem < Mutations::BaseMutation
   field :errors, [String], null: false 
 
   def resolve(name:, user_id:, location:, expiration_date:)
-    item = Item.new(name: name, user_id: user_id, location: location, expiration_date: expiration_date, image: "fakeimage")
+    item_image = ItemImageFacade.get_image(name)
+    item = Item.new(name: name, user_id: user_id, location: location, expiration_date: expiration_date, image: item_image.url)
 
     if item.save 
       {

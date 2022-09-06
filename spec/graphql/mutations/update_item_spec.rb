@@ -16,12 +16,11 @@ RSpec.describe 'Update Items' do
 
     mutation = <<~GQL
     mutation {
-      updateItem(input: {
+      updateItem(input: { id: #{@update[:id]}
             name: "#{@update[:name]}",
             expirationDate: "2022-09-24",
             location: "#{@update[:location]}",
-            userId: "#{@update[:user_id]}",
-            id: "#{@update[:id]}
+            forDonation: "true"
       })
       {
         item{
@@ -35,9 +34,9 @@ RSpec.describe 'Update Items' do
       }
     }
     GQL
-    binding.pry
     response = WasteNotWantNotBeSchema.execute(mutation)
-    binding.pry
     expect(@user1.items.last.name).to eq('Apple')
+    expect(@user1.items.last.location).to eq('pantry')
+    expect(@user1.items.last.for_donation).to eq(true)
   end  
 end

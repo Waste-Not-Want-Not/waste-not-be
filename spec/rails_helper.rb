@@ -1,5 +1,8 @@
 require 'simplecov'
 SimpleCov.start
+SimpleCov.add_filter 'config/initializers/assets.rb'
+SimpleCov.add_filter 'app/graphql/waste_not_want_not_be_schema.rb'
+SimpleCov.add_filter 'config/routes.rb'
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
@@ -79,4 +82,3 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
-

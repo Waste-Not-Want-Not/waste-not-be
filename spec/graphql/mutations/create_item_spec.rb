@@ -24,7 +24,7 @@ RSpec.describe 'Create Item' do
         errors
       }
     }
-    
+
     GQL
 
     result = WasteNotWantNotBeSchema.execute(query)
@@ -37,5 +37,37 @@ RSpec.describe 'Create Item' do
     expect(item["image"]).to be_a String
     expect(item["forDonation"]).to eq(false)
 
-  end  
+  end
+
+  it "creates an item and returns its information", :vcr do
+    user1 = User.create!(name: "Harry Potter", email: "hpotter@hogwarts.edu")
+
+    query = <<~GQL
+    mutation {
+      createItem(input: {
+        name:"Spinach",
+        location: "fridge",
+        expirationDate: "2001-02-03T04:05:06+00:00"
+        userId: 50,
+      }) {
+        item {
+          name,
+          location
+          expirationDate
+          userId
+          image
+          forDonation
+          id
+        }
+        errors
+      }
+    }
+
+    GQL
+
+    result = WasteNotWantNotBeSchema.execute(query)
+    # binding.pry
+    expect(result.first.second["createItem"]["errors"].first).to eq("User must exist")
+    expect(result.first.second["createItem"]["item"]).to eq(nil)
+  end
 end

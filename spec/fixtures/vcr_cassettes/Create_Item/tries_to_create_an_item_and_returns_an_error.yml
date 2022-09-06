@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?per_page=1&query=s
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - 563492ad6f917000010000013766ed931f7b4fd7bc7697331b581cb1
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Sep 2022 20:46:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '463'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 746a0e24dd1cb0e1-ATL
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - __cf_bm=0Ve0cptAbAb_tz_XFH6scfqwUuWPwzygSJOD04SPTKg-1662497199-0-Ae+T8pNupT7ikJH8uW6QukKOot/o48bh7ijKA7dtPlMSsOR1mhLgygVQifM3LaMm49S69QBIj7OGZevGOOuezsI=;
+        path=/; expires=Tue, 06-Sep-22 21:16:39 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      - __cf_bm=1PtqGGKj.kcICH0OPnReBWS9t31gPC4teiTe7..vPmc-1662497199-0-Ad8oc9Dtuay9tqbi0O9GiZu8bM8RjT+NxXkDyiylH7lWTV3D07VpvPUrXeziDPfxbyJPbvpV5wisKlQmDEa1+nw=;
+        path=/; expires=Tue, 06-Sep-22 21:16:39 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19937'
+      X-Ratelimit-Reset:
+      - '1664499674'
+      X-Request-Id:
+      - 4cfaad94-451e-4c8c-b694-235f223182ba
+      X-Runtime:
+      - '0.113083'
+      X-Server:
+      - anteater
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"per_page":1,"photos":[{"id":449520,"width":2592,"height":3888,"url":"https://www.pexels.com/photo/gray-metal-s-freestanding-letter-449520/","photographer":"Mat
+        Brown","photographer_url":"https://www.pexels.com/@mat-brown-150387","photographer_id":150387,"avg_color":"#D3D2D0","src":{"original":"https://images.pexels.com/photos/449520/pexels-photo-449520.jpeg","large2x":"https://images.pexels.com/photos/449520/pexels-photo-449520.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/449520/pexels-photo-449520.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/449520/pexels-photo-449520.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/449520/pexels-photo-449520.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/449520/pexels-photo-449520.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/449520/pexels-photo-449520.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/449520/pexels-photo-449520.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Gray
+        Metal S Freestanding Letter"}],"total_results":8000,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=1\u0026query=s"}'
+  recorded_at: Tue, 06 Sep 2022 20:46:39 GMT
+recorded_with: VCR 6.1.0

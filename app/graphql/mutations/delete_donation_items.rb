@@ -13,7 +13,7 @@ class Mutations::DeleteDonationItems < Mutations::BaseMutation
         item.delete
       end
       {
-        message: "#{count} donatable items have been deleted",
+        message: "#{count} donatable item(s) have been deleted",
         errors: []
       }
     else 

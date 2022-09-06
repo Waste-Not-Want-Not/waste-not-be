@@ -25,6 +25,8 @@ RSpec.describe 'Delete Items For Donation' do
     }
     GQL
     response = WasteNotWantNotBeSchema.execute(mutation)
+    expect(response.first.second["deleteDonationItems"]["message"]).to eq("Please input a valid User ID.")
+    expect(response.first.second["deleteDonationItems"]["errors"]).to eq("User does not exist within our database.")
     expect(@user1.items.count).to eq(2)
   end  
 

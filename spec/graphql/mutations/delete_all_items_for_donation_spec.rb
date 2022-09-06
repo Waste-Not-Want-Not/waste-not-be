@@ -14,7 +14,6 @@ RSpec.describe 'Delete Items For Donation' do
   end
 
   it "deletes all user's item's that are for donation", :vcr do
-
     mutation = <<~GQL
     mutation {
       deleteDonationItems(input: { id: #{@user1.id}
@@ -25,8 +24,8 @@ RSpec.describe 'Delete Items For Donation' do
     }
     GQL
     response = WasteNotWantNotBeSchema.execute(mutation)
-    expect(response.first.second["deleteDonationItems"]["message"]).to eq("Please input a valid User ID.")
-    expect(response.first.second["deleteDonationItems"]["errors"]).to eq("User does not exist within our database.")
+    expect(response.first.second["deleteDonationItems"]["message"]).to eq("3 donatable item(s) have been deleted")
+    expect(response.first.second["deleteDonationItems"]["errors"]).to eq(nil)
     expect(@user1.items.count).to eq(2)
   end  
 

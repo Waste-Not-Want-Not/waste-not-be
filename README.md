@@ -230,3 +230,21 @@ If this is green then the API is in good shape.
     }
 ```
 
+
+<!-- CONTACT -->
+## Contributors
+
+
+Thanks go to these wonderful people:
+
+<table>
+
+   <td align="center"><a href="https://github.com/jenniferhalloran"><img src="https://avatars.githubusercontent.com/u/48455658?v=4" width="100px;" alt=""/><br /><sub><b>Jenn H. (she/her)</b></sub></a><br /><a href="https://www.linkedin.com/in/jenniferlhalloran/" title ="Linked In"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a></td>
+
+   <td align="center"><a href="https://github.com/NickJacobsss"><img src="https://avatars.githubusercontent.com/u/101067754?v=4" width="100px;" alt=""/><br /><sub><b>Nick J. (he/him)</b></sub></a><br /><a href="https://www.linkedin.com/in/nickjacobsatc/" title ="Linked In"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a></td>
+
+   <td align="center"><a href="https://github.com/caden-jarrett"><img src="https://media-exp1.licdn.com/dms/image/D5635AQE1J4ZMO3iiXQ/profile-framedphoto-shrink_200_200/0/1661802246550?e=1663257600&v=beta&t=OoAwnCQ9Su2egELabtZFhMfZxpbRSdxHRwGzfh6BtWQ" width="100px;" alt=""/><br /><sub><b>Caden J. (he/him)</b></sub></a><br /><a href="https://www.linkedin.com/in/caden-jarrett-0655051b6/" title ="Linked In"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a></td>
+  </tr>
+</table>
+
+

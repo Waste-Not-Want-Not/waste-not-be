@@ -3,7 +3,7 @@
 
 <!-- PROJECT LOGO -->
 <div align="center">
-  <a href="https://waste-not-wn.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img src="logo" alt="logo" width="30%"/></a>
+  <a href="https://i.imgur.com/aRRQcYJ.png" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/aRRQcYJ.png" alt="logo" width="30%"/></a>
 </div>
 
   <p align="center">

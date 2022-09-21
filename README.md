@@ -13,6 +13,9 @@
     <a href="https://github.com/Waste-Not-Want-Not/waste-not"><strong>Explore the Want Not Waste Not Frontend Application »</strong></a>
   </p>
 </div>
+ <p align="center">
+Have you ever bought food that ends up sitting in your freezer too long, expires, or goes to waste because you didn't eat it in time? Of course you have, we all do sometimes. However, what can we do with this food that we don't end up eating? Welcome to Waste Not, Want Not. You can use Waste Not, Want Not to track the food that you purchase, expiration dates, and get connected to local food banks to donate your unwanted food. Let's work together to mitigate food waste!
+</p>
 
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Waste-Not-Want-Not/waste-not-be/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Waste-Not-Want-Not/waste-not-be/tree/main)

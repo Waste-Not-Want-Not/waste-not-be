@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'http://localhost:3000', 'https://waste-not-wn.herokuapp.com'
+    origins 'http://localhost:3000', 'https://waste-not-wn.herokuapp.com', 'https://waste-not-delta.vercel.app/'
 
     resource '*',
       headers: :any,
